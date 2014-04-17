@@ -4,6 +4,7 @@ Mytest::Application.routes.draw do
 
   resources :shoutouts
 
+  resources :users
 
 root :to => "pages#homepage"
 

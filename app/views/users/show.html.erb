@@ -1,0 +1,5 @@
+<h1>User Profile</h1>
+<h5><%= @user.username %></h5>
+<h5><%= @user.email %></h5>
+<%= link_to "Edit", edit_user_path(@user) %>
+<%= link_to "Delete", user_path(@user), :method => "delete", data: {:confirm => "Are you sure?"} %>
