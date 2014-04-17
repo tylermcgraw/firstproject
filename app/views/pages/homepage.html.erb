@@ -1,0 +1,10 @@
+<p> Hello World! </p>
+<div> 
+<h1> Shoutouts </h1>
+<ul>
+<% @shoutouts.each do |s|%>
+<li> <%= s.comment %> </li>
+<% end %>
+</ul>
+<%= link_to "new shoutout", new_shoutout_path %>
+</div>
