@@ -28,7 +28,7 @@ class UsersController < ApplicationController
 	end
 	def authenticate
 		redirect_to root_url if current_user.blank?
-		unless current_user.has_role? :admin
+		unless (current_user.has_role? :admin || (current_user.present? && @user.id == current_user.id)) 
 			redirect_to root_url, notice: "You may not do this action!"
 			return false
 		end

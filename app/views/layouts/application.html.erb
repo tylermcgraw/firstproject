@@ -2,14 +2,14 @@
 <html>
 <head>
   <title>Mytest</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
- 
 	<%= render "layouts/header" %>
-<%= yield %>
-
+	<%= yield %>
+	</div>
 </body>
 </html>

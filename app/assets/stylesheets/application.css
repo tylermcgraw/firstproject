@@ -13,14 +13,35 @@
  */
 body{
 	margin: 0px;
+	padding-top: 50px;
 }
 
-#header-div{
-	background-color: black;
-	height: 50px;
-	}
+.center-page-content-outer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.center-page-content-outer .center-page-content-inner {
+	position: relative;
+	margin-top: -50%;
+	margin-left: -50%;
+}
 
-#header-div a{
-	color: white;
-	float: right;
+.navbar-brand {
+	padding: 5px;
+}
+.navbar-brand img {
+	height:100%;
+}
+
+.notice {
+	background-color: rgba(0,255,0,0.5);
+}
+
+#error_explanation {
+	width: 350px;
+}
+#error_explanation h2 {
+	font-size: 20px;
+	margin: 0;
 }
